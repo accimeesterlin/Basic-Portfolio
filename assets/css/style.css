@@ -1,0 +1,144 @@
+body{
+	background:lightgrey;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	border:1px solid red;
+	padding:1.8rem;
+}
+
+.links ul{
+	display: flex;
+
+}
+
+.links ul li{
+	margin-left:1.4rem;
+}
+
+section{
+	display: flex;
+	justify-content: space-around;
+	margin:2rem;
+	margin-top:2.5rem;
+}
+
+.about{
+	width:650px;
+	margin-right: 0.9rem;
+	border:1px solid blue;
+	padding:0.5rem;
+}
+
+.connect{
+	width: 270px;
+	border:1px solid green;
+	padding:0.5rem;
+}
+
+footer{
+	border:1px solid red;
+	text-align: center;
+	padding:2.5rem;
+	position: absolute;
+	bottom:0;
+	width: 100%;
+}
+
+.mainbox{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.box{
+	width:14rem;
+	height: 9rem;
+	background: red;
+	margin:0.8rem;
+	padding: 0.9rem;
+	position: relative;
+}
+
+
+.box p{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-left:-0.9rem;
+	background: blue;
+	text-align: center;
+	height: 1.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
