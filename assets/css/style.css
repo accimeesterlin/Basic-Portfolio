@@ -17,6 +17,9 @@ a{
 	text-decoration: none;
 }
 
+
+
+
 p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -48,7 +51,8 @@ input, textarea{
 nav{
 	display: flex;
 	justify-content: space-between;
-	border:1px solid red;
+	background:#47a0b7;
+	/*box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);*/
 /*	padding:1.8rem;*/
 }
 
@@ -64,7 +68,21 @@ nav{
 
 .links ul li{
 	margin-left:1.4rem;
+
 }
+
+.links ul li a{
+	font-size: 1.7rem;
+	font-weight: 100;
+}
+
+.links ul li:hover a{ 
+	background: rgba(0, 0, 0, 0.5);
+	color:#fff;
+	padding: 0.1rem;
+	border-radius: 4px;
+}
+
 
 section{
 	display: flex;
@@ -72,24 +90,22 @@ section{
 	margin:2rem;
 	margin-top:2.5rem;
 
-	@media (max-width: 546px){
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
+	
 }
 
 
+
 .logo{
-	background: green;
+	background: rgba(64, 14, 107, 0.5);
 	padding: 3rem;
 	margin-left: 5.9rem;
 	color:#fff;
+	font-size: 1.3rem;
 }
 .about{
 	width:650px;
 	margin-right: 0.9rem;
-	border:2px solid rgba(0, 0, 0, 0.5);
+	/*border:1px solid rgba(0, 0, 0, 0.5);*/
 	padding:1.5rem;
 	background: #fff;
 }
@@ -107,7 +123,7 @@ img{
 
 .connect{
 	width: 270px;
-	border:1px solid green;
+	/*border:1px solid green;*/
 	padding:0.5rem;
 	height: 12rem;
 	background: #fff;
@@ -121,6 +137,10 @@ img{
 	font-size: 2.5rem;
 	margin-left: 1.3rem;
 }
+
+.social a:hover i{
+	color: red;
+} 
 
 
 
@@ -152,10 +172,18 @@ img{
 	color:#fff;
 }
 
-
+button{
+	width: 7rem;
+	padding: 0.8rem;
+	border-radius: 4px;
+	background: green;
+	border:1px solid lightgrey;
+	color:#fff;
+	outline: none;
+}
 
 .footer{
-	border:1px solid red;
+	background: rgba(0, 0, 0, 0.5);
 	text-align: center;
 	padding:2.5rem;
 	position: relative;
@@ -164,17 +192,11 @@ img{
 	left: 0;
 	top:0;
 	width: 100%;
+	color:#fff;
 	/*height: 5.5rem;*/
 }
 
-button{
-	width: 7rem;
-	padding: 0.8rem;
-	border-radius: 4px;
-	background: green;
-	border:1px solid lightgrey;
-	color:#fff;
-}
+
 
  .one{
 	background-image: url('../images/headphones.jpg');
@@ -205,7 +227,34 @@ button{
 
 
 
+@media (max-width: 767px){
+		.logo{
+			display: none;
+		}
 
+		.links ul li{
+			margin:0.3rem;
+		}
+		section{
+			display: flex;
+			justify-content: center;
+			flex-direction: column-reverse;
+		}
+
+		.connect{
+			width:100%;
+
+		}
+
+		.about{
+			width:100%;
+			margin-top:1.5rem;
+		}
+
+		.links ul li a{
+			margin-left: 0.9rem;
+		}
+	}
 
 
 
