@@ -11,7 +11,8 @@ body{
 	height: 100%;
 	width: 950px;
 	margin:0 auto;
-	background-image: url("../images/restaurant.png");
+	background-image: url("../images/background.png");
+	transition:background-color, 2s;
 }
 
 
@@ -254,7 +255,10 @@ button{
 
 
 
-@media (max-width: 767px){
+@media (max-width: 952px){
+		body{
+			width: 96%;
+		}
 		.logo{
 			display: none;
 		}
@@ -266,6 +270,7 @@ button{
 			display: flex;
 			justify-content: center;
 			flex-direction: column-reverse;
+
 		}
 
 		.connect{

@@ -19,14 +19,14 @@ data.addEventListener('mouseout', function(){
 // Changing the connect color style every 2 seconds
 var colors = ['red', 'blue', 'orange', 'green', 'purple', 'lightgrey', 'black'],
 	connect = document.getElementById('connect'),
-	container = document.getElementById('container'),
-	backgroundOne = ['background.png', 'background-one.png', 'background-three.png', 'background-four.png', 'background-five.png', 'background-six.png'];
+	container = document.getElementById('page'),
+	backgroundOne = ['background.png', 'background-one.png', 'background-two.png', 'background-three.png', 'background-four.png', 'background-five.png', 'background-six.png'];
 
-	console.log(backgroundOne[Math.round(Math.random() * backgroundOne.length)]);
+	console.log(backgroundOne[Math.round(Math.random() * backgroundOne.length) - 1]);
 
 setInterval(function(){
 		connect.style.color = colors[Math.round(Math.random() * colors.length)];
-		container.style.backgroundImage = "url('assets/images/' + 'backgroundOne[Math.round(Math.random() * backgroundOne.length)]')";
+		container.style.backgroundImage = 'url('+ 'assets/images/' + backgroundOne[Math.round(Math.random() * backgroundOne.length)] +')';
 }, 2000);
 
 
