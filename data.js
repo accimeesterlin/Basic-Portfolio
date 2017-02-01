@@ -20,7 +20,7 @@ data.addEventListener('mouseout', function(){
 var colors = ['red', 'blue', 'orange', 'green', 'purple', 'lightgrey', 'black'],
 	connect = document.getElementById('connect'),
 	container = document.getElementById('page'),
-	backgroundOne = ['background.png', 'background-one.png', 'background-two.png', 'background-three.png', 'background-four.png', 'background-five.png', 'background-six.png'];
+	backgroundOne = ['background.png', 'background-one.png', 'background-four.png', 'background-five.png', 'background-six.png'];
 
 	console.log(backgroundOne[Math.round(Math.random() * backgroundOne.length) - 1]);
 
