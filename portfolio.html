@@ -6,7 +6,6 @@
 	<title>Basic Portfolio</title>
 	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
 
@@ -63,26 +62,27 @@
 
 
 <aside class="connect">
-		<h1>Connect with Me</h1>
+		<h1 id="connect">Connect with Me</h1>
 		<hr>
 		<div class="social">
-			<a href="https://github.com/accimeesterlin" target="_blank">	
-				<img src="./assets/images/github.png" alt="">
+			<a href="https://github.com/accimeesterlin" target="_blank" class="icon" >	
+				<img src="./assets/images/github.png" alt="Github" onmouseover="para(this)">
 			</a>
 
-			<a href="https://www.linkedin.com/in/esterling-accime-324a4181?trk=nav_responsive_tab_profile_pic" target="_blank">	
-				<img src="./assets/images/linkedin.png" alt="">
+			<a href="https://www.linkedin.com/in/esterling-accime-324a4181?trk=nav_responsive_tab_profile_pic" target="_blank" class="icon">	
+				<img src="./assets/images/linkedin.png" alt="Linkedin" onmouseover="para(this)">
 			</a>
 
-			<a href="http://stackoverflow.com/users/7259986/accimeesterlin" target="_blank">
-				<img src="./assets/images/stackflow.png" alt="">
+			<a href="http://stackoverflow.com/users/7259986/accimeesterlin" target="_blank" class="icon">
+				<img src="./assets/images/stackflow.png" alt="Stackoverflow" onmouseover="para(this)">
 			</a>
 
-			<a href="https://twitter.com/accimeesterlin" target="_blank">
-				<img src="./assets/images/twitter.png" alt="">
+			<a href="https://twitter.com/accimeesterlin" target="_blank" class="icon">
+				<img src="./assets/images/twitter.png" alt="Twitter" onmouseover="para(this)">
 			</a>
 
 		</div>
+		<p id="data"></p>
 
 	</aside>
 </section>
@@ -92,5 +92,7 @@
 <footer class="footer">
 	<p>@Copyright2017 Esterling Accime</p>
 </footer>
+
+<script src="./data.js"></script>
 </body>
 </html>
